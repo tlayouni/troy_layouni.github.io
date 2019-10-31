@@ -13,7 +13,6 @@ library(viridis)
 library(p8105.datasets)
 library(plotly)
 
-rmarkdown::render("sample_dashboard.Rmd", output_format = "flexdashboard::flex_dashboard")
 ```
 
 Bringing in the data
