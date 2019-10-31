@@ -10,8 +10,8 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-<img align="right" src="images/me.jpg">
-
 I am a second year MPH candidate in the Department of Epidemiology at Columbia Univeristy's Mailman School of Public Health.
 
 You can learn more about my professional experience [here](about.html).
+
+![](images/me.jpg)

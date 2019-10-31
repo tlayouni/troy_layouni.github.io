@@ -1,5 +1,5 @@
 ---
-title: "About Me"
+title: "About"
 output: 
   html_document:
     toc: true
@@ -11,9 +11,9 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
+***
 ## Education
-
+***
 
 #### Columbia University, Mailman School of Public Health, New York, NY
 Expected May 2020
@@ -31,6 +31,7 @@ Expected May 2020
 
 
 ## Professional Experience
+***
 
 #### Data Analyst
 
@@ -52,7 +53,7 @@ August 2019 – Present
 * Facilitated faculty and teaching staff in troubleshooting of weekly assignments and course exams to ensure clarity of questions and continuity with lectures.
 
 
-Research Assistant		                                    
+#### Research Assistant		                                    
 
 VA Puget Sound Healthcare System: Research and Development, Seattle, WA
 
@@ -74,6 +75,7 @@ December 2015 – December 2016
 
 
 ## Certifications and Skills
+***
 
 #### Certifications 
 
