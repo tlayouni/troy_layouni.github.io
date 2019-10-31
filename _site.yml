@@ -11,4 +11,4 @@ navbar:
       href: https://tlayouni.github.io/troy_layouni.github.io>/
 output:
   html_document:
-    theme: journal
+    theme: lumen
