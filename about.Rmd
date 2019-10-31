@@ -11,3 +11,42 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+## Education
+
+
+Columbia University, Mailman School of Public Health, New York, NY (Expected May 2020)	
+
+* Master of Public Health (MPH), Epidemiology
+* Certificate in Infectious Disease Epidemiology
+* Relevant Coursework: Analysis of Categorical Data, Application of Epidemiologic Research Methods, Data Science I, Applied Epidemiology Analysis, Infectious Disease Epidemiology
+
+
+University of Washington, Seattle, WA					                	      2012-2016
+Molecular, Cellular and Developmental Biology 
+Minor in Global Health
+
+
+## Professional Experience
+Data Analyst 									                May 2019 –Present 
+Mailman School of Public Health, Department of Epidemiology, New York, NY     
+•	Created a program using SAS statistical software to classify the developmental stage at pregnancy loss using ultrasound and interview data from 324 research subjects.
+•	Maintained and analyzed complex data on the relationship between pregnancy loss and reproductive history using statistical methods in SAS and producing reportable findings.
+•	Created a user-friendly MS Access database for storage of data collected in study interviews. 
+Teaching Assistant- Quantitative Research Methods and Applications  	           August 2019 – Present                Office of Educational Programs, Mailman School of Public Health, New York, NY
+•	Led weekly discussion sessions for 20 first-year graduate students including presentations on new course concepts and demonstration of their real-life application using problem sets.
+•	Facilitated faculty and teaching staff in troubleshooting of weekly assignments and course exams to ensure clarity of questions and continuity with lectures.
+Research Assistant		                                                                                 December 2016 – June 2018     VA Puget Sound Healthcare System: Research and Development, Seattle, WA
+•	Led recruitment efforts including medical record abstraction for eligibility, and mail and phone correspondence, supporting the recruitment of over 100 subjects in the first year. 
+•	Facilitated data collection by conducting in-person interviews of more than 20 subjects which included assessing medical histories, performing pulmonary function testing as well as conducting follow-up phone interviews. 
+•	Managed research databases by providing quality control of collected data in order to ensure data integrity.
+Volunteer Research Assistant				                  December 2015 – December 2016
+VA Puget Sound Healthcare System: Health Services Research and Development, Seattle, WA 
+•	Conducted medical record data abstraction for over 300 research subjects and reviewed lab test results and diagnoses used for data analysis. 
+•	Performed data cleaning of interview data and outcomes for a study assessing the effectiveness of a new training technique on chronic disease management.
+•	Conducted a literature review, edited manuscript drafts, and constructed graphical interpretations for key results used in a published manuscript. 
+
+
+## Certifications and Skills 
+Certifications: Certification in Human Subjects Research (CITI) and HIPPA Training Certification Computer Skills: Statistical software including SAS and R, GIS, and Microsoft Office (Access, Word, Excel, PowerPoint)
+
