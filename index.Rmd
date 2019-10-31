@@ -4,15 +4,14 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
-#![](images/me.jpg)
-```
+<img align="right" src="images/me.jpg">
 
-You can learn more about my professional experience [here] (about.html).
+I am a second year MPH candidate in the Department of Epidemiology at Columbia Univeristy's Mailman School of Public Health.
+
+You can learn more about my professional experience [here](about.html).
