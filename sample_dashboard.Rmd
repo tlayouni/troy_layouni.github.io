@@ -1,0 +1,58 @@
+---
+title: "Untitled"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+library(plotly)
+
+rmarkdown::render("sample_dashboard.Rmd", output_format = "flexdashboard::flex_dashboard")
+```
+
+Bringing in the data
+
+```{r}
+data("rest_inspec")
+rest_inspec = 
+  rest_inspec %>% 
+  select(
+    boro, zipcode, cuisine_description, grade, critical_flag) %>%
+  mutate(boro = as.factor(boro)) %>% 
+  filter(grade == "C")
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Number of Restaurants with C ratings by Borough
+
+```{r plot_grade_c}
+rest_inspec %>% 
+  count(boro) %>% 
+  mutate(boro = fct_reorder(boro, n)) %>% 
+  plot_ly(x = ~boro, y = ~n, color = ~boro, rype = "bar")
+  
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
