@@ -15,9 +15,9 @@ library(plotly)
 
 ```
 
-Bringing in the Instacart Data and creating data set with aisles na dnumber of items 
 
-```{r}
+
+```{r data_load}
 data("instacart")
 instacart_aisles = 
   instacart %>% 
@@ -31,7 +31,7 @@ Column {data-width=650}
 
 ### Number of Items Ordered by Aisle
 
-```{r plot_grade_c}
+```{r plot_items_order_aisle}
 instacart_aisles %>% 
   filter(n_items_ordered > 10000) %>% 
   mutate(aisle = reorder(aisle, n_items_ordered)) %>% 
@@ -54,12 +54,22 @@ instacart %>%
   
      plot_ly(
        x = ~order_hour_of_day, y = ~n_items_hour, type = "bar", color = ~order_hour_of_day)
-
 ```
 
-### Chart C
+### Number of Items in Each Order by Weekday
 
 ```{r}
+instacart %>% 
+  mutate(order_dow = recode(order_dow, "0" = "Sunday", "1" = "Monday", "2" = "Tuesday", "3" = "Wednesday", "4" = "Thursday", "5" = "Friday", "6" = "Saturday")) %>% 
+  group_by(order_id) %>% 
+  mutate(
+    n_items_per_order = n()
+  ) %>% 
+  distinct() %>% 
 
+  plot_ly(
+    y = ~n_items_per_order, color = ~order_dow, type = "box")
+
+  
 ```
 
