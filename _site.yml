@@ -12,7 +12,7 @@ navbar:
     - icon: fa-github fa-lg
       href: https://github.com/tlayouni>/
     - icon: fa-linkedin fa-lg
-      href: https://www.linkedin.com/in/troy-layouni-530b11120>/
+      href: www.linkedin.com/in/troy-layouni>/
 output:
   html_document:
     theme: lumen
