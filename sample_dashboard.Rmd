@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Sample Dashboard: Instacart"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -15,28 +15,27 @@ library(plotly)
 
 ```
 
-Bringing in the data
+Bringing in the Instacart Data and creating data set with aisles na dnumber of items 
 
 ```{r}
-data("rest_inspec")
-rest_inspec = 
-  rest_inspec %>% 
-  select(
-    boro, zipcode, cuisine_description, grade, critical_flag) %>%
-  mutate(boro = as.factor(boro)) %>% 
-  filter(grade == "C")
+data("instacart")
+instacart_aisles = 
+  instacart %>% 
+  group_by(aisle) %>% 
+  summarize(n_items_ordered = n()) %>% 
+  arrange(desc(n_items_ordered))
 ```
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Number of Restaurants with C ratings by Borough
+### Number of Items Ordered by Aisle
 
 ```{r plot_grade_c}
-rest_inspec %>% 
-  count(boro) %>% 
-  mutate(boro = fct_reorder(boro, n)) %>% 
-  plot_ly(x = ~boro, y = ~n, color = ~boro, rype = "bar")
+instacart_aisles %>% 
+  filter(n_items_ordered > 10000) %>% 
+  mutate(aisle = reorder(aisle, n_items_ordered)) %>% 
+  plot_ly(x = ~aisle, y = ~n_items_ordered, color = ~aisle, type = "bar")
   
 ```
 
