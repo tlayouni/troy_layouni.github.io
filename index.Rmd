@@ -12,4 +12,4 @@ I am a second year MPH candidate in the Department of Epidemiology at Columbia U
 
 You can learn more about my professional experience [here](about.html).
 
-![](images/me.jpg)
+<img src="images/me.jpg" style="width:50%">
