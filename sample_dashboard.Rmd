@@ -42,21 +42,30 @@ instacart_aisles %>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Amount of Baby Spinach Orders by Hour of the Day
+### Number of Items Ordered by Days Since Prior Order
 
-```{r}
+```{r prior_order_plot}
+
+set.seed(1)
+
+insta = 
 instacart %>% 
-  filter(product_name == "Organic Baby Spinach") %>% 
-  group_by(order_hour_of_day, product_name) %>% 
-  summarize(
-    n_items_hour = n()
-    ) %>% 
-  
+  group_by(order_id) %>% 
+  mutate(
+    n_items_per_order = n()
+  ) %>% 
+  distinct()
+
+
+insta %>% 
+  ungroup() %>% 
+  sample_n(5000) %>% 
+
      plot_ly(
-       x = ~order_hour_of_day, y = ~n_items_hour, type = "bar", color = ~order_hour_of_day)
+       x = ~days_since_prior_order, y = ~n_items_per_order, type = "scatter", mode = "markers", color = ~n_items_per_order)
 ```
 
-### Number of Items in Each Order by Weekday
+### Number of Items per Order by Days Since Prior Order
 
 ```{r}
 instacart %>% 
@@ -70,6 +79,5 @@ instacart %>%
   plot_ly(
     y = ~n_items_per_order, color = ~order_dow, type = "box")
 
-  
 ```
 
