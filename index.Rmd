@@ -8,7 +8,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-I am a second year MPH candidate in the Department of Epidemiology at Columbia Univeristy's Mailman School of Public Health.
+I am a second year MPH candidate in the Department of Epidemiology at Columbia Univeristy's Mailman School of Public Health. My interests are in infectious disease epidemiology, particularly Influenza surveillance and forecasting.
 
 You can learn more about my professional experience [here](about.html).
 
