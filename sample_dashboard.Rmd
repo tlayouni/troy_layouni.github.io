@@ -42,9 +42,18 @@ instacart_aisles %>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Amount of Baby Spinach Orders by Hour of the Day
 
 ```{r}
+instacart %>% 
+  filter(product_name == "Organic Baby Spinach") %>% 
+  group_by(order_hour_of_day, product_name) %>% 
+  summarize(
+    n_items_hour = n()
+    ) %>% 
+  
+     plot_ly(
+       x = ~order_hour_of_day, y = ~n_items_hour, type = "bar", color = ~order_hour_of_day)
 
 ```
 
